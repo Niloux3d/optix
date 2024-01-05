@@ -1,3 +1,0 @@
-/home/saimo/wuyou/project/optix/build/CMakeFiles/rebuild_cache.dir
-/home/saimo/wuyou/project/optix/build/CMakeFiles/edit_cache.dir
-/home/saimo/wuyou/project/optix/build/CMakeFiles/test.dir
