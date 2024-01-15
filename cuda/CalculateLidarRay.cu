@@ -4,7 +4,8 @@
 #include <time.h>
 
 #include "common.h"
-#include "helper_math.h"
+// #include "helper_math.h"
+#include "sutil/vec_math.h"
 #include "CalculateLidarRay.cuh"
 #include <pthread.h>
 #include <vector_types.h>
