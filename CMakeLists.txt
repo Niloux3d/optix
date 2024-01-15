@@ -38,3 +38,6 @@ target_link_libraries(test
     # cmake会自动加入所需要的其他cuda库
     ${CUDA_LIBRARIES}
     )
+
+message(STATUS "CUDA头文件目录: ${CUDA_INCLUDE_DIRS}")
+message(STATUS "CUDA库: ${CUDA_LIBRARIES}")

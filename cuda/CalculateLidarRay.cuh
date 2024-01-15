@@ -1,7 +1,6 @@
 #ifndef _CALCULATE_LIDAR_RAY_H_
 #define _CALCULATE_LIDAR_RAY_H_
 
-#include <curand_kernel.h>
 #include <vector>
 
 // simulation parameters

@@ -16,7 +16,7 @@ CU_FILES=(RadarRayGenerator.cu RayGenerator.cu)
 
 # Compile CUDA code to object files
 for cu_file in "${CU_FILES[@]}"; do
-    $CUDA_PATH/bin/nvcc --ptx -I$OPTIX_INCLUDE -I$OPTIX_SDK_INCLUDE -arch=$ARCH -c -o ${cu_file%.cu}.ptx $cu_file
+    $CUDA_PATH/bin/nvcc --ptx -I$OPTIX_INCLUDE -I$OPTIX_SDK_INCLUDE -arch=$ARCH -c -o ${cu_file%.cu}.ptx $cu_file -lineinfo
     # $CUDA_PATH/bin/nvcc --optix-ir -I$OPTIX_INCLUDE -I$OPTIX_SDK_INCLUDE -arch=$ARCH -o ${cu_file%.cu}.optixir $cu_file -Xcompiler -fPIC
     # $CUDA_PATH/bin/nvcc -I$OPTIX_INCLUDE -I$OPTIX_SDK_INCLUDE -arch=$ARCH -o ${cu_file%.cu}.o $cu_file -Xcompiler -fPIC
 done
